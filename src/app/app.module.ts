@@ -4,16 +4,11 @@ import { SuccessModule } from './components/success/success.module';
 import { WarningModule } from './components/warning/warning.module';
 
 import { AppComponent } from './app.component';
-import { SuccessComponent } from './components/success/success.component';
-import { WarningComponent } from './components/warning/warning.component';
-
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SuccessComponent,
-    WarningComponent
-  ],
+    AppComponent
+    ],
   imports: [
     BrowserModule,
     SuccessModule,
