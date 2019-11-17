@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-comp2',
+  selector: 'app-warning',
     template: '<h2>ERROR!!! :(</h2>',
   styles: ['h2 {color:red;}']
 })
-export class Comp2Component implements OnInit {
+export class WarningComponent implements OnInit {
 
   constructor() { }
 
