@@ -1,3 +1,13 @@
-<app-success *ngIf="visible"></app-success>
+<!-- <app-success></app-success>
 <app-warning></app-warning>
-<button (click)="toggle()">PUSH</button>
+<button (click)="toggle()">PUSH</button> -->
+<!-- <app-card></app-card> -->
+<app-message [message]="message" [timerStarted]="timerStarted" (show)='displayContent($event)'></app-message>
+<app-title [title]="title"></app-title>
+
+<button (click)='startTimer()'>Start Timer</button>
+<button (click)='pauseTimer()'>Pause</button>
+
+<app-content *ngIf="visible"></app-content>
+
+<p>{{timeLeft}} Seconds Left....</p>
